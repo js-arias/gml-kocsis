@@ -52,6 +52,22 @@ A color key, which is compatible with color blindness
 and can be used with the `plates timepix map` [command](https://github.com/js-arias/earth),
 is stored in the file `kocsis-landscape-key.tab`.
 
+## Rotating the model
+
+To rotate the paleolandscape model,
+use the command `plates` from the [earth package](https://github.com/js-arias/earth):
+
+```bash
+plates timepix --model <your-model> --output <output-landscape-model> kocsis-landscape-unrot-xxx-5.tab
+```
+
+Note that in such cases,
+only pixels associated with a defined plate
+will be rotated;
+therefore,
+some past features that appear in the original landscape model
+might be lost.
+
 ## Citation and data license
 
 This model is the product of the direct processing
